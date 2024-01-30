@@ -23,10 +23,8 @@ class MainActivity : AppCompatActivity() {
 
         // Respond to button click event per specifications
 
-
+        myButton.setOnClickListener {
+            displayTextView.text = "Hello, ${editText.text} "
+        }
     }
-}
-
-class MyOnClickListener : View.OnClickListener {
-
 }
